@@ -14,7 +14,7 @@ const AboutSection = () => {
           <p className="text-lg 2xl:text-xl font-mons font-normal tracking-wide">
             Currently enrolled in Western Governor&apos;s University working
             towards my Bachelor&apos;s in Software Development with a focus on
-            C# (although I'm starting to enjoy JavaScript) - expected graduation is late 2022/early 2023. I am the founder of {" "}
+            C# (although I&apos;m starting to enjoy JavaScript) - expected graduation is late 2022/early 2023. I am the founder of {" "}
             <span className="text-emerald-800 font-bold underline">
               <Link href="https://digitalemberstudio.com">
                 Digital Ember Studio
