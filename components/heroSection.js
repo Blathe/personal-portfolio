@@ -14,7 +14,7 @@ const HeroSection = () => {
       
     return (
         <div className="flex flex-col flex-grow items-center anim-fade-in gap-6 py-24 md:py-64 md:h-screen">
-            <img className="rounded-full mb-16 anim-fade-in outline outline-8 outline-offset-4 outline-emerald-700 shadow-2xl" src="headshot.webp" width="256" height="256"></img>
+            <img className="rounded-full mb-16 anim-fade-in outline outline-8 outline-offset-4 outline-emerald-700 shadow-2xl" alt="self portrait" src="headshot.webp" width="256" height="256"></img>
             <h1 className="mx-auto text-4xl md:text-6xl uppercase font-mons font-normal">
               Hey, I<span className="text-emerald-700">&apos;</span>m{" "}
               <span className="font-oswald font-light font-bold">Scott</span>
