@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Tag from '../components/tag.js';
 
 export default function AboutSection() {
   return (
@@ -31,36 +32,16 @@ export default function AboutSection() {
             Technologies I Use
           </h2>
           <div className="flex flex-wrap justify-center 2xl:justify-start gap-4">
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              .NET CORE / BLAZOR
-            </h1>
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              AZURE APPS/SQL DATABASE
-            </h1>
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              GIT
-            </h1>
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              SQL
-            </h1>
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              REACT
-            </h1>
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              NEXT.JS
-            </h1>
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              TAILWIND CSS
-            </h1>
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              HTML
-            </h1>
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              CSS
-            </h1>
-            <h1 className="p-4 2xl:p-6 bg-emerald-700 text-white font-poppins">
-              JAVASCRIPT
-            </h1>
+            <Tag title=".net core / blazor" />
+            <Tag title="azure apps/sql database" />
+            <Tag title="git" />
+            <Tag title="sql" />
+            <Tag title="react" />
+            <Tag title="next.js" />
+            <Tag title="tailwind css" />
+            <Tag title="html" />
+            <Tag title="css" />
+            <Tag title="javascript" />
           </div>
         </div>
       </div>
