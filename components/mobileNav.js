@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 
-export default function MobileNav() {
+const MobileNav = () => {
     const [currentWidth, setCurrentWidth] = useState("");
 
     function closeSideMenu() {
@@ -52,3 +52,4 @@ export default function MobileNav() {
   );
 }
 
+export default MobileNav

@@ -1,6 +1,6 @@
 import MobileNav from "../components/mobileNav.js";
 
-export default function Header() {
+const Header = () => {
 
     function scrollToProjects(div) {
         if (typeof window !== "undefined") {
@@ -56,3 +56,5 @@ export default function Header() {
         </header>
     );
 }
+
+export default Header

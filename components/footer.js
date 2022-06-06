@@ -1,4 +1,4 @@
-export default function Footer() {
+const Footer = () => {
     return (
         <footer className="anim-fade-in text-center mb-3 font-mons">
           <p className="text-light font-sm py-2">
@@ -8,3 +8,5 @@ export default function Footer() {
         </footer>
     );
 }
+
+export default Footer

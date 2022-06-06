@@ -1,4 +1,4 @@
-export default function HeroSection() {
+const HeroSection = () => {
 
     function scrollToProjects(div) {
         if (typeof window !== "undefined") {
@@ -59,3 +59,5 @@ export default function HeroSection() {
         </div>
     );
 }
+
+export default HeroSection

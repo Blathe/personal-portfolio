@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function ProjectsSection() {
+const ProjectsSection = () => {
 
     return(
         <>
@@ -75,3 +75,5 @@ export default function ProjectsSection() {
         </>
     )
 }
+
+export default ProjectsSection

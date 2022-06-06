@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"; // import the icons you need
 
-export default function SideSocialLinks() {
+const SideSocialLinks = () => {
   return (
     <div className="md:fixed right-0 2xl:right-0 top-1/2 flex flex-row md:flex-col gap-2 justify-center m-6 anim-fade-left">
       <button
@@ -20,3 +20,5 @@ export default function SideSocialLinks() {
     </div>
   );
 }
+
+export default SideSocialLinks

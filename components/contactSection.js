@@ -2,9 +2,8 @@ import {useState} from 'react';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faArrowRight, faSpinner, faCheck } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
-import axios from 'axios';
 
-export default function ContactSection() {
+const ContactSection = () => {
 
     const [formState, setFormState] = useState({
         fullName: "",
@@ -95,3 +94,5 @@ export default function ContactSection() {
         </div>
     );
 }
+
+export default ContactSection

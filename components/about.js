@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Tag from '../components/tag.js';
 
-export default function AboutSection() {
+const AboutSection = () => {
   return (
     <div className="flex flex-col gap-6 py-24 px-8 xl:px-32 2xl:px-64 bg-gray-200 anim-fade-in">
       <h1 className="mx-auto text-4xl md:text-5xl uppercase font-mons font-normal">
@@ -48,3 +48,5 @@ export default function AboutSection() {
     </div>
   );
 }
+
+export default AboutSection
