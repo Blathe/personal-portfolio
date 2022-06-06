@@ -20,9 +20,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="container-fluid">
+      <div>
         <Header />
-        <main className="container-fluid">
+        <main>
           <HeroSection />
           <AboutSection />
           <ProjectsSection />
