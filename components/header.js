@@ -16,7 +16,7 @@ const Header = () => {
       }
 
     return(
-        <header className="px-8 py-8 2xl:px-64 xl:px-32">
+        <header className="px-8 py-8 2xl:px-64 xl:px-32 dark:text-white">
           <nav className="flex justify-between anim-fade-down">
             <div>
               <h2 className="text-2xl font-bold uppercase font-mons tracking-widest">

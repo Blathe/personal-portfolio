@@ -4,7 +4,7 @@ const ProjectsSection = () => {
 
     return(
         <>
-          <div id="projects" className="flex flex-col gap-12 anim-fade-in pb-12 px-8 sm:px-12 xl:px-32 2xl:px-64 ">
+          <div id="projects" className="flex flex-col gap-12 anim-fade-in pb-12 px-8 sm:px-12 xl:px-32 2xl:px-64 dark:text-white">
             <h1 className="mx-auto text-4xl md:text-5xl uppercase font-mons font-normal pt-24">
               Projects
             </h1>

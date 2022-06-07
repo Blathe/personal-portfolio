@@ -1,12 +1,12 @@
 const Footer = () => {
-    return (
-        <footer className="anim-fade-in text-center mb-3 font-mons">
-          <p className="text-light font-sm py-2">
-            Copyright &copy; 2022 -{" "}
-            <span className="text-emerald-700 font-bold">Scott Peters</span>
-          </p>
-        </footer>
-    );
-}
+  return (
+    <footer className="anim-fade-in text-center font-mons dark:text-white">
+      <p className="text-light font-sm p-4">
+        Copyright &copy; 2022 - {" "}
+        <span className="text-emerald-700 font-bold dark:text-emerald-500">Scott Peters</span>
+      </p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
