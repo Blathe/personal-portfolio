@@ -13,8 +13,10 @@ const ThemeToggleButton = (props) => {
         let currentTheme = theme;
         if (currentTheme === "dark"){
           setTheme("light");
+          localStorage.setItem('currentTheme', 'light');
         } else {
           setTheme("dark");
+          localStorage.setItem('currentTheme', 'dark');
         }
       }}>
         <FontAwesomeIcon
