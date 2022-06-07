@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, createContext, useContext } from 'react';
 import Head from "next/head";
 
 import AboutSection from "../components/about.js";
@@ -9,8 +9,10 @@ import ContactSection from "../components/contactSection.js";
 import Footer from "../components/footer.js";
 import Header from "../components/header.js";
 
+import { useThemeContext } from '../context/theme';
+
 export default function Home() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useThemeContext();
 
 
   return (

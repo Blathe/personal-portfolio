@@ -1,4 +1,5 @@
 import MobileNav from "../components/mobileNav.js";
+import ThemeToggleButton from '../components/ThemeToggleButton.js';
 
 const Header = () => {
 
@@ -24,7 +25,7 @@ const Header = () => {
               </h2>
             </div>
             <div>
-              <ul className="hidden md:inline-flex gap-2 md:gap-10">
+              <ul className="hidden md:inline-flex items-center gap-2 md:gap-10">
                 <li>
                   <button
                     aria-label="projects-button"
@@ -46,6 +47,9 @@ const Header = () => {
                   >
                     Contact
                   </button>
+                </li>
+                <li>
+                  <ThemeToggleButton />
                 </li>
               </ul>
             </div>
