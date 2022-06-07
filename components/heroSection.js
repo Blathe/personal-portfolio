@@ -13,7 +13,7 @@ const HeroSection = () => {
       }
       
     return (
-        <div className="flex flex-col flex-grow items-center anim-fade-in gap-6 py-24 md:py-64 md:h-screen">
+        <div className="flex flex-col flex-grow items-center anim-fade-in gap-6 py-24 md:py-64 md:h-screen dark:text-white">
             <img className="rounded-full mb-16 anim-fade-in outline outline-8 outline-offset-4 outline-emerald-700 shadow-2xl" alt="self portrait" src="headshot.webp" width="256" height="256"></img>
             <h1 className="mx-auto text-4xl md:text-6xl uppercase font-mons font-normal">
               Hey, I<span className="text-emerald-700">&apos;</span>m{" "}
@@ -21,7 +21,7 @@ const HeroSection = () => {
             </h1>
             <p className="mx-auto text-center text-xl font-mons font-normal tracking-wide md:w-4/5 px-8">
               I&apos;m a{" "}
-              <span className="font-bold text-emerald-800">
+              <span className="font-bold text-emerald-800 dark:text-emerald-500">
                 front end web developer
               </span>{" "}
               living in Northern Idaho. I enjoy creating useful and beautiful

@@ -3,7 +3,7 @@ import Tag from '../components/tag.js';
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col gap-6 py-24 px-8 xl:px-32 2xl:px-64 bg-gray-200 anim-fade-in">
+    <div className="flex flex-col gap-6 py-24 px-8 xl:px-32 2xl:px-64 bg-gray-200 anim-fade-in dark:bg-slate-900 dark:text-white">
       <h1 className="mx-auto text-4xl md:text-5xl uppercase font-mons font-normal">
         About
       </h1>
@@ -15,7 +15,7 @@ const AboutSection = () => {
             Currently enrolled in Western Governor&apos;s University working
             towards my Bachelor&apos;s in Software Development with a focus on
             C# (although I&apos;m starting to enjoy JavaScript) - expected graduation is late 2022/early 2023. I am the founder of {" "}
-            <span className="text-emerald-800 font-bold underline">
+            <span className="text-emerald-800 font-bold underline dark:text-emerald-500">
               <Link href="https://digitalemberstudio.com">
                 Digital Ember Studio
               </Link>

@@ -1,4 +1,5 @@
 import MobileNav from "../components/mobileNav.js";
+import ThemeToggleButton from '../components/ThemeToggleButton.js';
 
 const Header = () => {
 
@@ -16,7 +17,7 @@ const Header = () => {
       }
 
     return(
-        <header className="px-8 py-8 2xl:px-64 xl:px-32">
+        <header className="px-8 py-8 2xl:px-64 xl:px-32 dark:text-white">
           <nav className="flex justify-between anim-fade-down">
             <div>
               <h2 className="text-2xl font-bold uppercase font-mons tracking-widest">
@@ -24,7 +25,7 @@ const Header = () => {
               </h2>
             </div>
             <div>
-              <ul className="hidden md:inline-flex gap-2 md:gap-10">
+              <ul className="hidden md:inline-flex items-center gap-2 md:gap-10">
                 <li>
                   <button
                     aria-label="projects-button"
@@ -46,6 +47,9 @@ const Header = () => {
                   >
                     Contact
                   </button>
+                </li>
+                <li>
+                  <ThemeToggleButton />
                 </li>
               </ul>
             </div>
