@@ -9,7 +9,7 @@ const ThemeToggleButton = (props) => {
 
   return (
     <div className="dark:text-white">
-      <button aria-label="tiggle theme button" onClick={() => { 
+      <button aria-label="toggle theme button" onClick={() => { 
         let currentTheme = theme;
         if (currentTheme === "dark"){
           setTheme("light");
