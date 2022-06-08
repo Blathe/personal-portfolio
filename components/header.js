@@ -54,7 +54,10 @@ const Header = () => {
               </ul>
             </div>
 
-            <MobileNav />
+            <div className="sm:hidden flex flex-row gap-8">
+              <ThemeToggleButton />
+              <MobileNav />
+            </div>
 
           </nav>
         </header>

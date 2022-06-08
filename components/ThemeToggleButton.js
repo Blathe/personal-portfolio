@@ -4,12 +4,12 @@ import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons"; // import the
 
 import { useThemeContext } from '../context/theme';
 
-const ThemeToggleButton = (props) => {
+const ThemeToggleButton = () => {
   const [theme, setTheme] = useThemeContext();
 
   return (
-    <div className="dark:text-white">
-      <button aria-label="tiggle theme button" onClick={() => { 
+    <div className="dark:text-white text-black">
+      <button aria-label="toggle theme button" onClick={() => { 
         let currentTheme = theme;
         if (currentTheme === "dark"){
           setTheme("light");
@@ -20,7 +20,7 @@ const ThemeToggleButton = (props) => {
         }
       }}>
         <FontAwesomeIcon
-          className="hover:rotate-45 transition duration-500 border border-2 rounded-full p-1 opacity-50 hover:opacity-100"
+          className="hover:rotate-45 transition duration-500 border border-2 dark:border-white border-black rounded-full p-1 opacity-50 hover:opacity-100"
           icon={theme === "dark" ? faSun : faMoon}
           size="lg"
         />
