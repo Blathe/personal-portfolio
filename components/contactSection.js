@@ -39,7 +39,7 @@ const ContactSection = () => {
   function handleSubmit(e) {
     if (
       formState.fullName != "" &&
-      formState.email != "" &&
+      validateEmail(formState.email) &&
       formState.message != ""
     ) {
       e.preventDefault();
