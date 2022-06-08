@@ -1,4 +1,6 @@
 import { useState } from "react";
+import validateEmail from '../utils/emailValidation';
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import {
@@ -18,10 +20,20 @@ const ContactSection = () => {
     text: "Send Message",
     icon: faArrowRight,
     animation: "",
+    disabled: true
   });
 
   function handleChange(e) {
     setFormState({ ...formState, [e.target.name]: e.target.value });
+    validateForm();
+  }
+
+  function validateForm() {
+    if (formState.fullName.length > 3 && formState.message.length > 10 && validateEmail(formState.email)) {
+        setSubmitButton({...submitButton, disabled: false});
+    } else {
+        setSubmitButton({...submitButton, disabled: true});
+    }
   }
 
   function handleSubmit(e) {
@@ -152,9 +164,10 @@ const ContactSection = () => {
             />
           </div>
           <button
+            disabled={submitButton.disabled}
             id="submit-button"
             aria-label="submit-contact-form"
-            className="mx-auto lg:mx-0 w-56 p-4 bg-emerald-700 rounded-md text-white font-mons text-xl hover:bg-emerald-900 hover:cursor-pointer focus:border-0 flex flex-row justify-center gap-4 items-center transition-all hover:gap-6"
+            className="mx-auto lg:mx-0 w-56 p-4 bg-emerald-700 rounded-md text-white font-mons text-xl hover:bg-emerald-900 hover:cursor-pointer focus:border-0 flex flex-row justify-center gap-4 items-center transition-all hover:gap-6 disabled:hover:gap-4 disabled:bg-emerald-700 disabled:opacity-40 disabled:cursor-default"
             onClick={(e) => handleSubmit(e)}
           >
             {submitButton.text}{" "}
