@@ -30,7 +30,7 @@ const MobileNav = () => {
 
   return (
     <>
-      <div className="md:hidden">
+      <div>
         <button aria-label="Open Mobile Nav" onClick={openSideMenu}><FontAwesomeIcon icon={faBars} size="2x" /></button>
       </div>
 
