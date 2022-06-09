@@ -1,6 +1,6 @@
 const HeroSection = () => {
 
-    function scrollToProjects(div) {
+    const scrollToProjects = (div) => {
         if (typeof window !== "undefined") {
           const element = document.getElementById(div);
           if (element != null) {

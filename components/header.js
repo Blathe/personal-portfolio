@@ -3,7 +3,7 @@ import ThemeToggleButton from '../components/ThemeToggleButton.js';
 
 const Header = () => {
 
-    function scrollToProjects(div) {
+    const scrollToProjects = (div) => {
         if (typeof window !== "undefined") {
     
           const element = document.getElementById(div);

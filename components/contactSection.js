@@ -23,20 +23,20 @@ const ContactSection = () => {
     disabled: true
   });
 
-  function handleChange(e) {
+  const handleChange = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value });
     validateForm();
   }
 
-  function validateForm() {
+  const validateForm = () => {
     if (formState.fullName.length > 3 && formState.message.length > 10 && validateEmail(formState.email)) {
-        setSubmitButton({...submitButton, disabled: false});
+      setSubmitButton({...submitButton, disabled: false});
     } else {
         setSubmitButton({...submitButton, disabled: true});
     }
   }
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     if (
       formState.fullName != "" &&
       validateEmail(formState.email) &&
@@ -44,7 +44,7 @@ const ContactSection = () => {
     ) {
       e.preventDefault();
 
-      UpdateSubmitButton();
+      updateSubmitButton();
       let submitButton = document.getElementById("submit-button");
       submitButton.disabled = true;
       let myForm = document.getElementById("contact-form");
@@ -56,13 +56,13 @@ const ContactSection = () => {
         body: new URLSearchParams(formData).toString(),
       })
         .then(() => {
-          ShowSuccessScreen();
+          showSuccessScreen();
         })
         .catch((error) => alert(error));
     }
   }
 
-  function UpdateSubmitButton() {
+  const updateSubmitButton = () => {
     setSubmitButton({
       ...submitButton,
       text: "Sending...",
@@ -71,13 +71,13 @@ const ContactSection = () => {
     });
   }
 
-  function ShowSuccessScreen() {
+  const showSuccessScreen = () => {
     let successBanner = document.getElementById("success-banner");
     successBanner.style.height = "100%";
     setTimeout(showSuccessMessage, 1000);
   }
 
-  function showSuccessMessage() {
+  const showSuccessMessage = () => {
     var childDivs = document
       .getElementById("success-banner")
       .getElementsByClassName("success-message");
