@@ -1,17 +1,16 @@
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
-import '../styles/globals.css'
+import "../styles/globals.css";
 
-import { Theme } from '../context/theme';
-
+import { Theme } from "../context/theme";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Theme>
       <Component {...pageProps} />
     </Theme>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

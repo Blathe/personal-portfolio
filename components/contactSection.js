@@ -1,7 +1,5 @@
 import { useState } from "react";
-import validateEmail from '../utils/emailValidation';
-
-
+import validateEmail from "../utils/emailValidation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import {
   faArrowRight,
@@ -20,21 +18,25 @@ const ContactSection = () => {
     text: "Send Message",
     icon: faArrowRight,
     animation: "",
-    disabled: true
+    disabled: true,
   });
 
   const handleChange = (e) => {
     setFormState({ ...formState, [e.target.name]: e.target.value });
     validateForm();
-  }
+  };
 
   const validateForm = () => {
-    if (formState.fullName.length > 3 && formState.message.length > 10 && validateEmail(formState.email)) {
-      setSubmitButton({...submitButton, disabled: false});
+    if (
+      formState.fullName.length > 3 &&
+      formState.message.length > 10 &&
+      validateEmail(formState.email)
+    ) {
+      setSubmitButton({ ...submitButton, disabled: false });
     } else {
-        setSubmitButton({...submitButton, disabled: true});
+      setSubmitButton({ ...submitButton, disabled: true });
     }
-  }
+  };
 
   const handleSubmit = (e) => {
     if (
@@ -60,7 +62,7 @@ const ContactSection = () => {
         })
         .catch((error) => alert(error));
     }
-  }
+  };
 
   const updateSubmitButton = () => {
     setSubmitButton({
@@ -69,13 +71,13 @@ const ContactSection = () => {
       icon: faSpinner,
       animation: "animate-spin",
     });
-  }
+  };
 
   const showSuccessScreen = () => {
     let successBanner = document.getElementById("success-banner");
     successBanner.style.height = "100%";
     setTimeout(showSuccessMessage, 1000);
-  }
+  };
 
   const showSuccessMessage = () => {
     var childDivs = document
@@ -84,7 +86,7 @@ const ContactSection = () => {
     for (var i = 0; i < childDivs.length; i++) {
       childDivs[i].classList.remove("hidden");
     }
-  }
+  };
 
   return (
     <div
