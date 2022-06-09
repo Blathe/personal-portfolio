@@ -19,10 +19,10 @@ export default function Home() {
     <div className={theme}>
       <div className="container-fluid p-0 m-0 dark:bg-slate-800">
         <Head>
-          <title>Scott Peters - Full Stack Web Developer Portfolio</title>
+          <title>Scott Peters - Front End Web Developer Portfolio</title>
           <meta
             name="description"
-            content="A portfolio of Scott Peters, a Full Stack Web Developer who builds web applications and websites."
+            content="A portfolio of Scott Peters, a Front End Web Developer who builds web applications and websites."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>

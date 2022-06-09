@@ -6,15 +6,15 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"; // import t
 const MobileNav = () => {
     const [currentWidth, setCurrentWidth] = useState("");
 
-    function closeSideMenu() {
+    const closeSideMenu = () => {
         setCurrentWidth("0%");
     }
 
-    function openSideMenu() {
+    const openSideMenu = () => {
         setCurrentWidth("100%");
     }
 
-    function scrollToProjects(div) {
+    const scrollToProjects = (div) => {
         if (typeof window !== "undefined") {
     
           const element = document.getElementById(div);
