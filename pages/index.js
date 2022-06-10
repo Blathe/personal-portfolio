@@ -20,7 +20,7 @@ export default function Home() {
           <title>Scott Peters - Front End Web Developer Portfolio</title>
           <meta
             name="description"
-            content="A portfolio of Scott Peters, a Front End Web Developer who builds web applications and websites."
+            content="The portfolio of Scott Peters, a Front End Web Developer who builds web applications and websites."
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
