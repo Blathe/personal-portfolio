@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className={theme}>
-      <div className="container-fluid p-0 m-0 dark:bg-slate-800">
+      <div className="container-fluid p-0 m-0 dark:bg-slate-800 transition-all duration-700">
         <Head>
           <title>Scott Peters - Front End Web Developer Portfolio</title>
           <meta
