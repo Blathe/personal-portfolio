@@ -81,10 +81,7 @@ const ProjectsSection = () => {
               <div className="mt-8 flex flex-col gap-4 font-mons">
                 <h1 className="text-lg font-bold">Coming Soon...</h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                  dolorum exercitationem sint ipsa mollitia iure enim quam
-                  quisquam dolorem pariatur sapiente, facere doloremque
-                  veritatis, in nobis soluta dicta quo eum!
+                  This project is currently a work in progress, once it is at an acceptable stage to show it will be displayed.
                 </p>
                 <p>
                   <span className="font-bold">Stack:</span>{" "}
