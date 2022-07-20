@@ -1,4 +1,3 @@
-import { useState, createContext, useContext } from "react";
 import Head from "next/head";
 
 import AboutSection from "../components/about.js";

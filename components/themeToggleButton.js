@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { useThemeContext } from "../context/theme";
