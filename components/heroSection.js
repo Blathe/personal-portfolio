@@ -27,7 +27,7 @@ const HeroSection = () => {
       <p className="mx-auto text-center text-xl font-mons font-normal tracking-wide md:w-4/5 px-8">
         I&apos;m a{" "}
         <span className="font-bold text-emerald-800 dark:text-emerald-500">
-          front end web developer
+          web developer
         </span>{" "}
         living in Northern Idaho. I enjoy creating useful and beautiful websites
         and web applications that solve real problems.
