@@ -25,10 +25,10 @@ const ProjectsSection = () => {
               </div>
               <div className="mt-8 flex flex-col gap-4 font-mons">
                 <h1 className="text-lg font-bold">
-                  Digital Ember Studio - Website
+                  Digital Ember Studio - Small Business Website
                 </h1>
                 <p>
-                  Digital Ember Studio is a website I built from scratch using
+                  Digital Ember Studio is a website built using
                   NextJS and Tailwind CSS. I did the mockup design in Figma and
                   created the logo in Adobe Illustrator.
                 </p>
@@ -56,7 +56,7 @@ const ProjectsSection = () => {
               <div className="mt-8 flex flex-col gap-4 font-mons">
                 <h1 className="text-lg font-bold">Tesla Clone</h1>
                 <p>
-                  This is a front end clone of Tesla&apos;s website using Next.js, Tailwind CSS, and it is deployed to Netlify.
+                  This is a front end clone of Tesla&apos;s website using Next.js, Tailwind CSS, and deployed to Netlify.
                 </p>
                 <p>
                   <span className="font-bold">Stack:</span> Next.js, Tailwind CSS, Netlify
