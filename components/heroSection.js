@@ -27,7 +27,7 @@ const HeroSection = () => {
       <p className="mx-auto text-center text-xl font-mons font-normal tracking-wide md:w-4/5 px-8">
         I&apos;m a{" "}
         <span className="font-bold text-emerald-800 dark:text-emerald-500">
-          web developer
+          freelance web developer
         </span>{" "}
         living in Northern Idaho. I enjoy creating useful and beautiful websites
         and web applications that solve real problems.
@@ -35,7 +35,7 @@ const HeroSection = () => {
 
       <p className="mx-auto text-center text-xl w-full tracking-wide font-mons font-normal md:w-3/5 px-8">
         I&apos;m looking for great people to work with - check out some of my
-        projects and let&apos;s get in touch!
+        projects below and let&apos;s get in touch!
       </p>
       <div className="flex flex-col md:flex-row gap-6 px-8 mx-auto items-center">
         <div>
@@ -46,7 +46,7 @@ const HeroSection = () => {
             }}
             className="shadow-md font-mons text-white bg-emerald-700 font-medium rounded-md text-xl px-10 md:px-12 py-2.5 text-center mr-2 hover:scale-105 hover:shadow-lg transition"
           >
-            Hire Me!
+            Work With Me!
           </button>
         </div>
         <div>
