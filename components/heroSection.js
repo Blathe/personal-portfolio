@@ -1,11 +1,15 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+
 const HeroSection = () => {
-  const scrollToProjects = (div) => {
+
+  const scrollToElement = (div, block) => {
     if (typeof window !== "undefined") {
       const element = document.getElementById(div);
       if (element != null) {
         element.scrollIntoView({
           behavior: "smooth",
-          block: "center",
+          block: block,
         });
       }
     }
@@ -42,18 +46,18 @@ const HeroSection = () => {
           <button
             aria-label="Hire Me"
             onClick={() => {
-              scrollToProjects("contact-section");
+              scrollToElement("contact-section", "center");
             }}
             className="shadow-md font-mons text-white bg-emerald-700 font-medium rounded-md text-xl px-10 md:px-12 py-2.5 text-center mr-2 hover:scale-105 hover:shadow-lg transition"
           >
-            Work With Me!
+            Let's Work Together!
           </button>
         </div>
         <div>
           <button
             aria-label="Projects"
             onClick={() => {
-              scrollToProjects("projects");
+              scrollToElement("projects", "center");
             }}
             className="shadow-md font-mons text-white bg-emerald-700 font-medium rounded-md text-xl px-10 md:px-12 py-2.5 text-center mr-2 hover:scale-105 hover:shadow-lg transition"
           >
@@ -61,6 +65,21 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
+      <div id="scroll-to-about-button" className="mt-40">
+          <button
+            aria-label="Scroll to About section button"
+            onClick={() => {
+              scrollToElement("about", "start");
+            }}
+            className="scale-105"
+          >
+            <FontAwesomeIcon
+              className="animate-bounce transition duration-500 border border-2 dark:border-white border-black rounded-full p-1 opacity-50 hover:opacity-100"
+              icon={faArrowCircleDown}
+              size="lg"
+            />
+          </button>
+        </div>
     </div>
   );
 };

@@ -1,9 +1,8 @@
-import Link from "next/link";
 import Tag from "../components/tag.js";
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col gap-6 py-24 px-8 xl:px-32 2xl:px-64 bg-gray-200 anim-fade-in dark:bg-slate-900 dark:text-white">
+    <div id="about" className="flex flex-col gap-6 py-24 px-8 xl:px-32 2xl:px-64 bg-gray-200 anim-fade-in dark:bg-slate-900 dark:text-white">
       <h1 className="mx-auto text-4xl md:text-5xl uppercase font-mons font-normal">
         About
       </h1>

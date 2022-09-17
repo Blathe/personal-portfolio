@@ -91,7 +91,7 @@ const ContactSection = () => {
   return (
     <div
       id="contact-section"
-      className="flex flex-col gap-6 pt-24 pb-24 bg-emerald-700 anim-fade-in dark:bg-slate-900 dark:text-white"
+      className="flex flex-col gap-6 py-24 bg-emerald-700 anim-fade-in dark:bg-slate-900 dark:text-white"
     >
       <h2 className="mx-auto text-4xl lg:text-5xl uppercase font-mons font-normal pb-12 text-white">
         LET&apos;S CONNECT
