@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"; // import the icons you need
 
