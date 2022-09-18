@@ -9,7 +9,7 @@ const SideSocialLinks = () => {
         aria-label="Github"
         className="hover:scale-110 opacity-70 hover:opacity-100 transition border-solid border border-black p-2 dark:border-white"
       >
-        <Link href="https://github.com/Blathe">
+        <Link target="_blank" href="https://github.com/Blathe">
           <FontAwesomeIcon icon={faGithub} size="2x" />
         </Link>
       </button>
@@ -17,7 +17,7 @@ const SideSocialLinks = () => {
         aria-label="LinkedIn"
         className="hover:scale-110 opacity-70 hover:opacity-100 transition border-solid border border-black p-2 dark:border-white"
       >
-        <Link href="https://www.linkedin.com/in/scott-peters-b93919223/">
+        <Link href="https://www.linkedin.com/in/scott-peters-b93919223/" target="_blank">
           <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
         </Link>
       </button>
