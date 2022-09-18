@@ -28,8 +28,8 @@ const ContactSection = () => {
 
   const validateForm = () => {
     if (
-      formState.fullName.length > 3 &&
-      formState.message.length > 10 &&
+      formState.fullName.length >= 3 &&
+      formState.message.length >= 20 &&
       validateEmail(formState.email)
     ) {
       setSubmitButton({ ...submitButton, disabled: false });
@@ -125,7 +125,7 @@ const ContactSection = () => {
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="flex flex-col flex-grow">
               <label className="font-bold" htmlFor="full-name">
-                Full Name <span className="text-red-500">*</span>
+                Full Name: <span className="text-red-500">*</span>
               </label>
               <input
                 onChange={handleChange}
@@ -133,12 +133,12 @@ const ContactSection = () => {
                 className="h-16 p-2 border-b-4 border-gray-300 outline-none focus:border-emerald-600 dark:focus:border-cyan-700 transition-all dark:bg-gray-800"
                 name="fullName"
                 type="text"
-                placeholder="Enter your name"
+                placeholder="Enter your name."
               />
             </div>
             <div className="flex flex-col flex-grow">
               <label className="font-bold" htmlFor="email">
-                Email <span className="text-red-500">*</span>
+                Email: <span className="text-red-500">*</span>
               </label>
               <input
                 onChange={handleChange}
@@ -146,13 +146,13 @@ const ContactSection = () => {
                 className="h-16 p-2 border-b-4 border-gray-300 outline-none focus:border-emerald-600 dark:focus:border-cyan-700 transition-all dark:bg-gray-800"
                 name="email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Enter your email."
               />
             </div>
           </div>
           <div className="flex flex-col flex-grow">
             <label className="font-bold" htmlFor="message">
-              Message <span className="text-red-500">*</span>
+              Message: <span className="text-red-500">*</span>
             </label>
             <textarea
               onChange={handleChange}
@@ -160,7 +160,7 @@ const ContactSection = () => {
               className="p-2 resize-none border-b-4 border-gray-300 outline-none focus:border-emerald-600 dark:focus:border-cyan-700 transition-all dark:bg-gray-800"
               name="message"
               type="text"
-              placeholder="Enter your message"
+              placeholder="Enter your message... at least 20 characters required."
               rows="8"
               resizable="false"
             />
