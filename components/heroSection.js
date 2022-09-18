@@ -50,7 +50,7 @@ const HeroSection = () => {
             }}
             className="shadow-md font-mons text-white bg-emerald-700 font-medium rounded-md text-xl px-10 md:px-12 py-2.5 text-center mr-2 hover:scale-105 hover:shadow-lg transition"
           >
-            Let's Work Together!
+            Let&apos;s Work Together!
           </button>
         </div>
         <div>
