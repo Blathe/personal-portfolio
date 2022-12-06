@@ -13,8 +13,8 @@ const AboutSection = () => {
           <p className="text-lg 2xl:text-xl font-mons font-normal tracking-wide">
             Currently enrolled in Western Governor&apos;s University working
             towards my Bachelor&apos;s in Software Development with a focus on
-            C# (although I&apos;m starting to enjoy JavaScript) - expected
-            graduation is late 2022/early 2023.
+            C# - expected
+            graduation is early 2023.
           </p>
           <p className="text-lg 2xl:text-xl font-mons font-normal tracking-wide">
             In the little spare time I have, I enjoy photography, fly fishing, and reading up on

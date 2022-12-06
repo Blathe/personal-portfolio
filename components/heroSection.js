@@ -16,9 +16,9 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="flex flex-col flex-grow items-center anim-fade-in gap-6 py-24 md:py-64 md:h-screen dark:text-white">
+    <div className="flex flex-col flex-grow items-center anim-fade-in gap-6 py-24 md:h-screen dark:text-white">
       <img
-        className="rounded-full mb-16 anim-fade-in outline outline-8 outline-offset-4 outline-emerald-700 shadow-2xl"
+        className="rounded-full mb-16 md:mb-4 anim-fade-in outline outline-8 outline-offset-4 outline-emerald-700 shadow-2xl"
         alt="self portrait"
         src="headshot.webp"
         width="256"
@@ -65,21 +65,6 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-      <div id="scroll-to-about-button" className="mt-40">
-          <button
-            aria-label="Scroll to About section button"
-            onClick={() => {
-              scrollToElement("about", "start");
-            }}
-            className="scale-105"
-          >
-            <FontAwesomeIcon
-              className="animate-bounce transition duration-500 border border-2 dark:border-white border-black rounded-full p-1 opacity-50 hover:opacity-100"
-              icon={faArrowCircleDown}
-              size="lg"
-            />
-          </button>
-        </div>
     </div>
   );
 };
