@@ -20,7 +20,7 @@ const HeroSection = () => {
       <img
         className="rounded-full mb-16 md:mb-4 anim-fade-in outline outline-8 outline-offset-4 outline-emerald-700 shadow-2xl"
         alt="self portrait"
-        src="headshot.webp"
+        src="headshot2.webp"
         width="256"
         height="256"
       ></img>

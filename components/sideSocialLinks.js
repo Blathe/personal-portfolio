@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"; // import the icons you need
 
@@ -9,17 +8,13 @@ const SideSocialLinks = () => {
         aria-label="Github"
         className="hover:scale-110 opacity-70 hover:opacity-100 transition border-solid border border-black p-2 dark:border-white"
       >
-        <Link target="_blank" href="https://github.com/Blathe">
-          <FontAwesomeIcon icon={faGithub} size="2x" />
-        </Link>
+        <a href="https://github.com/blathe" target="_blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
       </button>
       <button
         aria-label="LinkedIn"
         className="hover:scale-110 opacity-70 hover:opacity-100 transition border-solid border border-black p-2 dark:border-white"
       >
-        <Link href="https://www.linkedin.com/in/scott-peters-b93919223/" target="_blank">
-          <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
-        </Link>
+        <a href="https://www.linkedin.com/in/scott-peters-b93919223/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} size="2x" /></a>
       </button>
     </div>
   );
