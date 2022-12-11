@@ -34,7 +34,7 @@ const ProjectsSection = () => {
                   CSS, Figma, Adobe Illustrator, Netlify
                 </p>
                 <div className="text-center shadow-md font-mons text-white bg-emerald-700 font-medium rounded-md text-xl px-10 py-2.5 hover:scale-105 hover:shadow-lg transition w-56">
-                  <a href="https://digitalemberstudio.com" target="_blank">View Live Site</a>
+                  <a href="https://digitalemberstudio.com" target="_blank" rel="noreferrer">View Live Site</a>
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@ const ProjectsSection = () => {
                   <span className="font-bold">Technologies:</span> Next.js, Tailwind CSS, Netlify
                 </p>
                 <div className="text-center shadow-md font-mons text-white bg-emerald-700 font-medium rounded-md text-xl px-10 py-2.5 hover:scale-105 hover:shadow-lg transition w-56">
-                  <a href="https://teslaclone123.netlify.app" target="_blank">View Live Site</a>
+                  <a href="https://teslaclone123.netlify.app" target="_blank" rel="noreferrer">View Live Site</a>
                 </div>
               </div>
             </div>
