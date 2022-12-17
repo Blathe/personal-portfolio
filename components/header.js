@@ -21,7 +21,7 @@ const Header = () => {
           <h2 className="text-2xl font-bold uppercase font-mons tracking-widest">
             Scott Peters
           </h2>
-          <h4 className="text-md uppercase font-mons tracking-widest">Web Developer</h4>
+          <h4 className="text-md uppercase font-mons tracking-widest">Software Engineer</h4>
         </div>
         <div>
           <ul className="hidden md:inline-flex items-center gap-2 md:gap-10">
