@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the 
 import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 
 const HeroSection = () => {
-
   const scrollToElement = (div, block) => {
     if (typeof window !== "undefined") {
       const element = document.getElementById(div);
@@ -31,10 +30,10 @@ const HeroSection = () => {
       <p className="mx-auto text-center text-xl font-mons font-normal tracking-wide md:w-4/5 px-8">
         I&apos;m an aspiring{" "}
         <span className="font-bold text-emerald-800 dark:text-emerald-500">
-          web developer
+          software engineer
         </span>{" "}
         living in Northern Idaho. I enjoy creating useful and beautiful websites
-        and web applications that solve real problems.
+        and applications that solve real problems.
       </p>
 
       <p className="mx-auto text-center text-xl w-full tracking-wide font-mons font-normal md:w-3/5 px-8">
