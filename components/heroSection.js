@@ -17,9 +17,9 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col flex-grow items-center anim-fade-in gap-6 py-24 md:h-screen dark:text-white">
       <img
-        className="rounded-full mb-16 md:mb-4 anim-fade-in outline outline-8 outline-offset-4 outline-emerald-700 shadow-2xl"
+        className="rounded-full object-cover w-[256px] h-[256px] mb-16 md:mb-4 anim-fade-in outline outline-8 outline-offset-4 outline-emerald-700 shadow-2xl"
         alt="self portrait"
-        src="headshot2.webp"
+        src="headshot.jpeg"
         width="256"
         height="256"
       ></img>
