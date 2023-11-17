@@ -11,7 +11,7 @@ const AboutSection = () => {
         <div className="flex flex-col text-center 2xl:text-left gap-6 basis-1/2">
           <h2 className="font-bold font-mons uppercase">Get To Know Me</h2>
           <p className="text-lg 2xl:text-xl font-mons font-normal tracking-wide">
-            Recently graduated from Western Governors University with my Bachelors in Software Engineering and looking a developer role.
+            Recently graduated from Western Governors University with my Bachelors in Software Engineering and I am currently looking a developer role.
           </p>
           <p className="text-lg 2xl:text-xl font-mons font-normal tracking-wide">
             In the little spare time I have, I enjoy photography, fly fishing, gaming, and staying up to date on new technologies.
