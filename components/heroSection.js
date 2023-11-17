@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import ScrollDownButton from "../components/scrollDownButton"
 
 const HeroSection = () => {
   const scrollToElement = (div, block) => {
@@ -15,7 +16,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="flex flex-col flex-grow items-center anim-fade-in gap-6 py-24 md:h-screen dark:text-white">
+    <div className="flex flex-col flex-grow items-center anim-fade-in gap-6 py-24 md:h-[calc(100vh-120px)] dark:text-white">
       <img
         className="rounded-full object-cover w-[256px] h-[256px] mb-16 md:mb-4 anim-fade-in outline outline-8 outline-offset-4 outline-emerald-700 shadow-2xl"
         alt="self portrait"
@@ -63,6 +64,9 @@ const HeroSection = () => {
             My Projects
           </button>
         </div>
+      </div>
+      <div className="hidden md:block md:absolute md:bottom-10 md:left-1/2">
+        <ScrollDownButton />
       </div>
     </div>
   );

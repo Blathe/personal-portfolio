@@ -27,6 +27,9 @@ const ProjectsSection = () => {
                   This is my capstone project for my Software Engineering degree. The application is written in Python with the Django framework. It uses a PostgreSQL database and is deployed to Heroku.
                 </p>
                 <p>
+                  <span className="font-bold">**Heroku dyno might be asleep, give it a sec to wake up if stuck loading.</span>
+                </p>
+                <p>
                   <span className="font-bold">Technologies:</span> Python/Django, Bootstrap 5, PostgreSQL, Heroku
                 </p>
               </div>
@@ -73,9 +76,9 @@ const ProjectsSection = () => {
               </div>
               <div className="mt-8 flex flex-col gap-4 font-mons grow">
                 <div className="flex flex-col grow gap-4">
-                  <h1 className="text-lg font-bold">Tesla Clone</h1>
+                  <h1 className="text-lg font-bold">Tesla Clone - Front End</h1>
                   <p>
-                    This is a clone of Tesla&apos;s website using Next.js, and Tailwind CSS - deployed to Netlify.
+                    I liked Tesla's website so I wanted to try to recreate the front end of it. Made with Next.js, and Tailwind CSS - deployed to Netlify.
                   </p>
                   <p>
                     <span className="font-bold">Technologies:</span> Next.js, Tailwind CSS, Netlify
