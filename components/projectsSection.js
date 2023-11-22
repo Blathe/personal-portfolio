@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+import { faGithub } from "@fortawesome/free-brands-svg-icons"; // import the icons you need
+
 const ProjectsSection = () => {
   return (
     <>
@@ -12,22 +15,22 @@ const ProjectsSection = () => {
         <div className="grid grid-cols-1 gap-20 xl:gap-8 xl:grid-cols-3 mx-auto">
         <div className="w-100">
             <div className="px-8 lg:px-36 xl:px-8 2xl:px-0 flex flex-col gap-4 h-full">
-              <div className="outline outline-4 outline-emerald-800 overflow-hidden grow-0">
+              <div className="outline outline-4 outline-emerald-800 overflow-hidden">
                 <img
-                  className="hover:scale-125 transition duration-750"
+                  className="hover:scale-125 transition duration-750 position-cover"
                   src="dashboard.jpg"
-                  alt=""
+                  alt="A colorful dashboard"
                   width="900"
                   height="553"
                 />
               </div>
               <div className="mt-8 flex gap-4 flex-col font-mons grow">
-                <h1 className="text-lg font-bold">Ticket Management System (Capstone)</h1>
+                <div className="flex flex-row gap-4">
+                  <h1 className="text-lg font-bold">Ticket Management System (Capstone)</h1>
+                  <a href="https://github.com/blathe/djangotickets" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+                </div>
                 <p>
-                  This is my capstone project for my Software Engineering degree. The application is written in Python with the Django framework. It uses a PostgreSQL database and is deployed to Heroku.
-                </p>
-                <p>
-                  <span className="font-bold">Heroku dyno might be asleep, give it a sec to wake up if stuck loading.</span>
+                  This was my capstone project for my Software Engineering degree. It is a simple Ticket Management system with session based auth, basic CRUD functionality, report generation (CSV), filtering, and pagination.
                 </p>
                 <p>
                   <span className="font-bold">Technologies:</span> Python/Django, Bootstrap 5, PostgreSQL, Heroku
@@ -40,7 +43,7 @@ const ProjectsSection = () => {
             <div className="px-8 lg:px-36 xl:px-8 2xl:px-0 flex flex-col gap-4 h-full">
               <div className="outline outline-4 outline-emerald-800 overflow-hidden">
                 <img
-                  className="hover:scale-125 transition duration-750"
+                  className="hover:scale-125 transition duration-750 object-none"
                   src="digital-ember.webp"
                   alt=""
                   width="900"
@@ -78,7 +81,7 @@ const ProjectsSection = () => {
                 <div className="flex flex-col grow gap-4">
                   <h1 className="text-lg font-bold">Tesla Clone - Front End</h1>
                   <p>
-                    I liked Tesl&apos;s website so I wanted to try to recreate the front end of it. Made with Next.js, and Tailwind CSS - deployed to Netlify.
+                    I liked Tesla&apos;s website so I wanted to try to recreate the front end of it. Made with Next.js, and Tailwind CSS - deployed to Netlify.
                   </p>
                   <p>
                     <span className="font-bold">Technologies:</span> Next.js, Tailwind CSS, Netlify
