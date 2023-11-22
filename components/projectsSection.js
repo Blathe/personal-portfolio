@@ -13,7 +13,7 @@ const ProjectsSection = () => {
         </h1>
 
         <div className="grid grid-cols-1 gap-20 xl:gap-8 xl:grid-cols-3 mx-auto">
-        <div className="w-100">
+          <div className="w-100">
             <div className="px-8 lg:px-36 xl:px-8 2xl:px-0 flex flex-col gap-4 h-full">
               <div className="outline outline-4 outline-emerald-800 overflow-hidden">
                 <img

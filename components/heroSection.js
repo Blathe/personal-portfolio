@@ -25,8 +25,7 @@ const HeroSection = () => {
         height="256"
       ></img>
       <h1 className="mx-auto text-4xl md:text-6xl uppercase font-mons font-normal">
-        Hey, I<span className="text-emerald-700">&apos;</span>m{" "}
-        <span className="font-oswald font-light font-bold">Scott</span>
+        Hey, I<span className="text-emerald-700">&apos;</span>m Scott
       </h1>
       <p className="mx-auto text-center text-xl font-mons font-normal tracking-wide md:w-4/5 px-8">
         I&apos;m an aspiring{" "}
