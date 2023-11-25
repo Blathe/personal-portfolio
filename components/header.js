@@ -1,18 +1,8 @@
 import MobileNav from "../components/mobileNav.js";
 import ThemeToggleButton from "./themeToggleButton.js";
+import scrollToElement from "../utils/scrollToElement";
 
 const Header = () => {
-  const scrollToProjects = (div) => {
-    if (typeof window !== "undefined") {
-      const element = document.getElementById(div);
-      if (element != null) {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    }
-  };
 
   return (
     <header className="px-8 py-8 2xl:px-64 xl:px-32 dark:text-white">
@@ -30,7 +20,7 @@ const Header = () => {
                 aria-label="projects-button"
                 className="md:text-xl tracking-widest font-bold uppercase font-mons hover:scale-105 transition"
                 onClick={() => {
-                  scrollToProjects("projects");
+                  scrollToElement("projects");
                 }}
               >
                 Projects

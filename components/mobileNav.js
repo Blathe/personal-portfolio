@@ -3,6 +3,8 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 
+import scrollToElement from "../utils/scrollToElement";
+
 const MobileNav = () => {
   const [currentWidth, setCurrentWidth] = useState("");
 
@@ -12,19 +14,6 @@ const MobileNav = () => {
 
   const openSideMenu = () => {
     setCurrentWidth("100%");
-  };
-
-  const scrollToProjects = (div) => {
-    if (typeof window !== "undefined") {
-      const element = document.getElementById(div);
-      if (element != null) {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-        setCurrentWidth("0%");
-      }
-    }
   };
 
   return (
@@ -49,7 +38,7 @@ const MobileNav = () => {
           <button
             aria-label="Projects"
             onClick={() => {
-              scrollToProjects("projects");
+              scrollToElement("projects");
             }}
             className="hover:scale-110 transition uppercase"
             href="/"
@@ -59,7 +48,7 @@ const MobileNav = () => {
           <button
             aria-label="Contact"
             onClick={() => {
-              scrollToProjects("contact-section");
+              scrollToElement("contact-section");
             }}
             className="hover:scale-110 transition uppercase"
             href="/"

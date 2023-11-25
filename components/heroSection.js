@@ -1,19 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
-import ScrollDownButton from "../components/scrollDownButton"
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import scrollToElement from "../utils/scrollToElement";
 
 const HeroSection = () => {
-  const scrollToElement = (div, block) => {
-    if (typeof window !== "undefined") {
-      const element = document.getElementById(div);
-      if (element != null) {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: block,
-        });
-      }
-    }
-  };
 
   return (
     <div className="flex flex-col flex-grow items-center anim-fade-in gap-6 py-24 md:h-[calc(100vh-120px)] dark:text-white">
@@ -64,9 +53,17 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-      <div className="hidden md:block md:absolute md:bottom-10 md:left-1/2">
-        <ScrollDownButton />
-      </div>
+      <button
+        className="hidden md:block md:absolute md:bottom-10 md:left-1/2"
+        aria-label="LinkedIn"
+        onClick={() => {
+          scrollToElement("about");
+        }}
+      >
+        <FontAwesomeIcon
+          className="hover:scale-110 opacity-70 hover:opacity-100 rounded-full w-[32px] h-[32px] transition border-solid border border-black p-2 dark:border-white animate-bounce"
+          icon={faArrowDown} size="1x" />
+      </button>
     </div>
   );
 };
