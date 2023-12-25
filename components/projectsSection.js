@@ -36,7 +36,7 @@ const ProjectsSection = () => {
                   CSS, Vercel
                 </p>
               </div>
-              <a href="https://codecapture.io" target="_blank" className="text-center shadow-md font-mons text-white bg-emerald-700 font-medium rounded-md text-xl px-10 py-2.5 hover:scale-105 hover:shadow-lg transition w-full">View Live Site</a>
+              <a href="https://codecapture.io" target="_blank" rel="noreferrer" className="text-center shadow-md font-mons text-white bg-emerald-700 font-medium rounded-md text-xl px-10 py-2.5 hover:scale-105 hover:shadow-lg transition w-full">View Live Site</a>
             </div>
           </div>
           <div className="w-100">
