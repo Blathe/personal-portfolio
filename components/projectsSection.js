@@ -29,7 +29,7 @@ const ProjectsSection = () => {
                   CodeCapture.io
                 </h1>
                 <p>
-                  CodeCapture.io is a tool to quickly generate beautiful images of code snippets.
+                  CodeCapture.io is a project I created to quickly generate beautiful images of code snippets.
                 </p>
                 <p>
                   <span className="font-bold">Technologies:</span> Next.js, Tailwind
